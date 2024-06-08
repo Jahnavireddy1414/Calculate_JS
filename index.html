@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Link to Bootstrap CSS for basic styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom CSS for additional styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for centering the calculator in the viewport -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <!-- Calculator wrapper -->
+        <div class="calculator">
+            <!-- Display area to show the current input and result -->
+            <div class="display" id="display"></div>
+            <!-- Button grid container -->
+            <div class="buttons">
+                <!-- Clear (AC) button to reset the calculator -->
+                <button class="btn btn-light" data-action="clear">AC</button>
+                <!-- Modulo (%) button -->
+                <button class="btn btn-light" data-action="modulo">%</button>
+                <!-- Division (/) button -->
+                <button class="btn btn-light" data-action="divide">/</button>
+                <!-- Multiplication (*) button -->
+                <button class="btn btn-light" data-action="multiply">*</button>
+                <!-- Number buttons (7-9) -->
+                <button class="btn btn-light" data-value="7">7</button>
+                <button class="btn btn-light" data-value="8">8</button>
+                <button class="btn btn-light" data-value="9">9</button>
+                <!-- Subtraction (-) button -->
+                <button class="btn btn-light" data-action="subtract">-</button>
+                <!-- Number buttons (4-6) -->
+                <button class="btn btn-light" data-value="4">4</button>
+                <button class="btn btn-light" data-value="5">5</button>
+                <button class="btn btn-light" data-value="6">6</button>
+                <!-- Addition (+) button -->
+                <button class="btn btn-light" data-action="add">+</button>
+                <!-- Number buttons (1-3) -->
+                <button class="btn btn-light" data-value="1">1</button>
+                <button class="btn btn-light" data-value="2">2</button>
+                <button class="btn btn-light" data-value="3">3</button>
+                <!-- Equal (=) button to compute the result -->
+                <button class="btn btn-light" data-action="equals">=</button>
+                <!-- Number button (0) -->
+                <button class="btn btn-light" data-value="0">0</button>
+                <!-- Decimal point (.) button -->
+                <button class="btn btn-light" data-value=".">.</button>
+                <!-- Square (x²) button to square the current number -->
+                <button class="btn btn-light" data-action="square">x²</button>
+            </div>
+        </div>
+    </div>
+    <!-- Link to the custom JavaScript file for calculator functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
